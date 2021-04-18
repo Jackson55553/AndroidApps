@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="send">отправить</string>
+    <string name="second"></string>
+    <string name="title_activity_receive_message" />
+    <string name="chooser">send message...</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:entries="@array/beer_colors"
+        app:layout_constraintTop_toBottomOf="@+id/brands"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <Button
+        android:id="@+id/find_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color"
+        android:layout_alignLeft="@+id/color"
+        android:layout_marginTop="23dp"
+        android:text="@string/button_name"
+        app:layout_constraintTop_toBottomOf="@+id/color"
+        tools:layout_editor_absoluteX="29dp"
+        android:onClick="onClickFindBeer"/>
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_beer"
+        android:layout_alignLeft="@+id/find_beer"
+        android:text="@string/main_name"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
